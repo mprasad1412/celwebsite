@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo img{
+    width: 170px;
+    
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ff8c00;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ffe4c4;
+}
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #ffe4c4;
+    text-align: center;
+}
+
+.content .par{
+    padding-right: 5px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.content h1{
+    font-family: Verdana;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 20px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff8c00;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffe4c4;
+    transition: 0.4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cn:hover{
+    background: #ffe4c4; 
+}
+
+.content span{
+    color: #ff8c00;
+    font-size: 60px;
+}
+
+.back-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}  
+
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}  
+
+@media screen and (max-width:1200px) {
+    .main {
+        width: 1220px;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+        background-position: center;
+        background-size: cover;
+        height: 169vh;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .main {
+        width: 1200px;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+        background-position: center;
+        background-size: cover;
+        height: 509vh;
+    }
+    .content{
+        width: 1200px;
+        height: auto;
+        margin-top: 40%;
+        color: #ffe4c4;
+        text-align: center;
+    }
+    
+}
